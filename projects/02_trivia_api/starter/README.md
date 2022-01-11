@@ -118,7 +118,7 @@ The API will return three error types when requests fail:
 
 `GET /categories`
 
-    `curl http://127.0.0.1:5000/categories`
+    curl http://127.0.0.1:5000/categories
 
 #### Response
 
@@ -141,7 +141,7 @@ The API will return three error types when requests fail:
 
 `GET /questions`
 
-    `curl http://127.0.0.1:5000/questions`
+    curl http://127.0.0.1:5000/questions
 
 #### Response
 
@@ -238,7 +238,7 @@ The API will return three error types when requests fail:
 
 `GET /questions/<int:id>`
 
-    `curl http://127.0.0.1:5000/questions/9 -X DELETE`
+    curl http://127.0.0.1:5000/questions/9 -X DELETE
 
 #### Response
 
@@ -256,7 +256,7 @@ The API will return three error types when requests fail:
 
 `GET /categories/<int:cat_id>/questions`
 
-    `curl http://127.0.0.1:5000/categories/1/questions`
+    curl http://127.0.0.1:5000/categories/1/questions
 
 #### Response
 
@@ -296,12 +296,12 @@ The API will return three error types when requests fail:
 
 `POST /questions`
 
-    `curl http://127.0.0.1:5000/questions -X POST -H "Content-Type: application/json" -d '{
+    curl http://127.0.0.1:5000/questions -X POST -H "Content-Type: application/json" -d '{
             "question": "When did Perseverance rover landed on Mars",
             "answer": "18 Feb 2021",
             "difficulty": 3,
             "category": "1"
-        }'`
+        }'
 
 #### Response
 
@@ -317,9 +317,9 @@ The API will return three error types when requests fail:
 
 `POST /questions/search`
 
-    `curl http://127.0.0.1:5000/questions/search -X POST -H "Content-Type: application/json" -d '{
+    curl http://127.0.0.1:5000/questions/search -X POST -H "Content-Type: application/json" -d '{
             "searchTerm": "Perseverance"
-        }'`
+        }'
 
 #### Response
 
@@ -345,10 +345,10 @@ The API will return three error types when requests fail:
 
 `POST /quizzes`
 
-    `curl http://127.0.0.1:5000/quizzes -X POST -H "Content-Type: application/json" -d '{
+    curl http://127.0.0.1:5000/quizzes -X POST -H "Content-Type: application/json" -d '{
         "previous_questions": [1, 7],
         "quiz_category": {"type": "Science", "id": "1"}
-        }'`
+        }'
 
 #### Response
 
